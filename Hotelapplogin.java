@@ -19,6 +19,8 @@ public class Hotelapplogin {
 			driver.findElement(By.id("username")).sendKeys(UserName);
 			driver.findElement(By.id("password")).sendKeys(PassWord);
 			driver.findElement(By.id("login")).click();
+			System.out.println("Succesfully Logged In");
+			
 		}
 	
 		  @DataProvider(name="testdata") 
