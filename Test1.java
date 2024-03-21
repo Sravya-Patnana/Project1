@@ -34,6 +34,7 @@ public class Test1 {
 		driver.findElement(By.id("password")).sendKeys("vasu1234");
 		driver.findElement(By.id("login")).click();
 		String greeting = driver.findElement(By.id("username_show")).getAttribute("value");
+		System.out.println("I am going to check the greeting message");
 		if(greeting.equalsIgnoreCase(ExpectedText)) {
 			testCase.log(Status.PASS,"Actual Greeting!");
 		}
